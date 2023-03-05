@@ -1,0 +1,15 @@
+{ "destinations" : [
+    {
+        "id" : "1",
+        "city" : "Warsaw"
+    },
+    {
+        "id" : "2",
+        "city" : "London"
+    },
+    {
+        "id" : "3",
+        "city" : "Berlin"
+    }
+]
+}

@@ -1,7 +1,10 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ([
-/* 0 */,
-/* 1 */
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/sum.js":
+/*!********************!*\
+  !*** ./src/sum.js ***!
+  \********************/
 /***/ ((module) => {
 
 function sum(a, b) {
@@ -12,7 +15,11 @@ module.exports = {
 };
 
 /***/ }),
-/* 2 */
+
+/***/ "./src/sum2.js":
+/*!*********************!*\
+  !*** ./src/sum2.js ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25,7 +32,11 @@ function sum2(a, b) {
 }
 
 /***/ }),
-/* 3 */
+
+/***/ "./src/css/index.scss":
+/*!****************************!*\
+  !*** ./src/css/index.scss ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -34,14 +45,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ }),
-/* 4 */
+
+/***/ "./src/assets/img/proba.png":
+/*!**********************************!*\
+  !*** ./src/assets/img/proba.png ***!
+  \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "d2e222e5fb750b3ed1bb.png";
 
 /***/ })
-/******/ 	]);
+
+/******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -133,11 +149,14 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _sum2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
-var sum = (__webpack_require__(1).sum);
+/* harmony import */ var _sum2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum2 */ "./src/sum2.js");
+/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/index.scss */ "./src/css/index.scss");
+/* harmony import */ var _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/proba.png */ "./src/assets/img/proba.png");
+var sum = (__webpack_require__(/*! ./sum */ "./src/sum.js").sum);
 
 
 
@@ -155,4 +174,4 @@ document.querySelector('div').classList.add("change");
 
 /******/ })()
 ;
-//# sourceMappingURL=index.bed725c7213dbe99bf77.bundle.js.map
+//# sourceMappingURL=index.f8ed46529dfe11b137a2.bundle.js.map

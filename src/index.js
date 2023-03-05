@@ -7,6 +7,14 @@ console.log("Hello World");
 console.log(sum(2,3));
 console.log(sum2(2,3));
 
+fetch("../endpoints/destinations.json")
+    .then((res) => res.text()) // Transform the data into text
+    .then((data) => {
+console.log(data);})
+.catch((err) => console.log(err));
+
+
+
 let heading = document.querySelector("#demo"),
     sumValue = sum(10,5);
 
