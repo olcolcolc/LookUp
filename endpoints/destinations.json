@@ -1,15 +1,21 @@
 { "destinations" : [
     {
         "id" : "1",
-        "city" : "Warsaw"
+        "value" : "warsaw",
+        "desc" : "Warsaw",
+        "code" : "war"
     },
     {
         "id" : "2",
-        "city" : "London"
+        "value" : "london",
+        "desc" : "London",
+        "code" : "ldn"
     },
     {
         "id" : "3",
-        "city" : "Berlin"
+        "value" : "berlin",
+        "desc" : "Berlin",
+        "code" : "bln"
     }
 ]
 }

@@ -1,10 +1,7 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/sum.js":
-/*!********************!*\
-  !*** ./src/sum.js ***!
-  \********************/
+/******/ 	var __webpack_modules__ = ([
+/* 0 */,
+/* 1 */
 /***/ ((module) => {
 
 function sum(a, b) {
@@ -15,11 +12,7 @@ module.exports = {
 };
 
 /***/ }),
-
-/***/ "./src/sum2.js":
-/*!*********************!*\
-  !*** ./src/sum2.js ***!
-  \*********************/
+/* 2 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -32,11 +25,7 @@ function sum2(a, b) {
 }
 
 /***/ }),
-
-/***/ "./src/css/index.scss":
-/*!****************************!*\
-  !*** ./src/css/index.scss ***!
-  \****************************/
+/* 3 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -45,19 +34,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ }),
-
-/***/ "./src/assets/img/proba.png":
-/*!**********************************!*\
-  !*** ./src/assets/img/proba.png ***!
-  \**********************************/
+/* 4 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "d2e222e5fb750b3ed1bb.png";
 
 /***/ })
-
-/******/ 	});
+/******/ 	]);
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -149,29 +133,30 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _sum2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum2 */ "./src/sum2.js");
-/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/index.scss */ "./src/css/index.scss");
-/* harmony import */ var _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/proba.png */ "./src/assets/img/proba.png");
-var sum = (__webpack_require__(/*! ./sum */ "./src/sum.js").sum);
+/* harmony import */ var _sum2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+var sum = (__webpack_require__(1).sum);
 
 
 
 console.log("Hello World");
 console.log(sum(2, 3));
 console.log((0,_sum2__WEBPACK_IMPORTED_MODULE_0__.sum2)(2, 3));
-var heading = document.querySelector("#demo"),
-  sumValue = sum(10, 5);
-heading.innerText = "10+10= ".concat(sumValue);
-var myIcon = new Image();
-myIcon.src = _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__;
-document.querySelector("div").append(myIcon);
-document.querySelector('div').classList.add("change");
+fetch("https://raw.githubusercontent.com/olcolcolc/LookUp/main/endpoints/destinations.json") //jsona trzeba wrzucic  na githuba i wejsc w niego a potem kliknac raw i wkleic linka
+.then(function (res) {
+  return res.json();
+}) // Transform the data into text
+.then(function (data) {
+  data.destinations.forEach(function (element) {
+    console.log(element);
+  });
+})["catch"](function (err) {
+  return console.log(err);
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.f8ed46529dfe11b137a2.bundle.js.map
+//# sourceMappingURL=index.5ca02227e62e53c610f7.bundle.js.map

@@ -7,21 +7,12 @@ console.log("Hello World");
 console.log(sum(2,3));
 console.log(sum2(2,3));
 
-fetch("../endpoints/destinations.json")
-    .then((res) => res.text()) // Transform the data into text
+fetch("https://raw.githubusercontent.com/olcolcolc/LookUp/main/endpoints/destinations.json") //jsona trzeba wrzucic  na githuba i wejsc w niego a potem kliknac raw i wkleic linka
+    .then((res) => res.json()) // Transform the data into text
     .then((data) => {
-console.log(data);})
+        data.destinations.forEach(element =>{
+            console.log(element)
+        })
+})
 .catch((err) => console.log(err));
 
-
-
-let heading = document.querySelector("#demo"),
-    sumValue = sum(10,5);
-
-heading.innerText = `10+10= ${sumValue}`;
-
-let myIcon = new Image();
-myIcon.src = Icon;
-
-document.querySelector("div").append(myIcon);
-document.querySelector('div').classList.add("change");
